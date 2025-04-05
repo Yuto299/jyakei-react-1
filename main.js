@@ -49,11 +49,37 @@
 // console.log(age); // 31
 // console.log(name); // undefined
 
-const name = 'ゆと';
-const age = 21;
+// const name = 'ゆと';
+// const age = 21;
 
-const myProfile = {
-  name,
-  age,
-};
-console.log(myProfile); // { name: 'ゆと', age: 21 }
+// const myProfile = {
+//   name,
+//   age,
+// };
+// console.log(myProfile); // { name: 'ゆと', age: 21 }
+
+// const aray1 = [1, 2];
+// // console.log(aray1); // [1, 2]
+// // console.log(...aray1); // 1 2
+
+// const sumFunc = (num1, num2) => {
+//   console.log(num1 + num2);
+// };
+// // sumFunc(aray1[0], aray1[1]); // 3
+// sumFunc(...aray1); // スプレッド構文
+
+// const array2 = [1, 2, 3, 4, 5];
+// const [num1, num2, ...num3] = array2;
+
+// console.log(num1); // 1
+// console.log(num2); // 2
+// console.log(num3); // [3, 4, 5]
+
+const array3 = [10, 20];
+const array4 = [30, 40];
+
+const array5 = [...array3];
+// console.log(array5); // [10, 20]
+
+const array6 = [...array3, ...array4];
+console.log(array6); // [30, 40, [10, 20]]
