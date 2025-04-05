@@ -75,11 +75,37 @@
 // console.log(num2); // 2
 // console.log(num3); // [3, 4, 5]
 
-const array3 = [10, 20];
-const array4 = [30, 40];
+// const array3 = [10, 20];
+// const array4 = [30, 40];
 
-const array5 = [...array3];
-// console.log(array5); // [10, 20]
+// const array5 = [...array3];
+// // console.log(array5); // [10, 20]
 
-const array6 = [...array3, ...array4];
-console.log(array6); // [30, 40, [10, 20]]
+// const array6 = [...array3, ...array4];
+// console.log(array6); // [30, 40, [10, 20]]
+
+// const nameArray = ['田中', '山田', '佐藤'];
+// for (let index = 0; index < nameArray.length; index++) {
+//   console.log(`${index + 1}番目は${nameArray[index]}です`);
+// }
+
+// nameArray.map((name) => {
+//   return name;
+// });
+// console.log(nameArray);
+
+// const numArry = [1, 2, 3, 4, 5];
+// const newNumArry = numArry.filter((num) => {
+//   return num % 2 === 0; //filterの時は条件式を書く
+// });
+// console.log(newNumArry); // [1, 3, 5]
+
+const nameArray = ['田中', '山田', '佐藤'];
+const newNameArray = nameArray.map((name) => {
+  if (name !== '佐藤') {
+    return `${name}さん、こんにちは！`;
+  } else {
+    return `${name}、こんにちは！`;
+  }
+});
+console.log(newNameArray); //配列じゃないとmapは使用できない
