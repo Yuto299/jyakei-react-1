@@ -31,10 +31,20 @@
 // const message2 = `私の名前は${name}です。年齢は${age}歳です。`;
 // console.log(message2);
 
-const myProfile = ['ゆと', 21]; //配列です
-const message1 = `私の名前は${myProfile[0]}です。年齢は${myProfile[1]}歳です。`;
-console.log(message1);
+// const myProfile = ['ゆと', 21]; //配列です
+// const message1 = `私の名前は${myProfile[0]}です。年齢は${myProfile[1]}歳です。`;
+// console.log(message1);
 
-const [name, age] = myProfile; //分割代入です
-const message2 = `私の名前は${name}です。年齢は${age}歳です。`;
-console.log(message2);
+// const [name, age] = myProfile; //分割代入です
+// const message2 = `私の名前は${name}です。年齢は${age}歳です。`;
+// console.log(message2);
+
+// const sayHello = (name = 'ゲスト') => console.log(`こんにちは！${name}さん!`);
+// sayHello('ゆと');
+
+const myProfile = {
+  age: 31,
+};
+const { age, name = 'ゲスト' } = myProfile;
+console.log(age); // 31
+console.log(name); // undefined
