@@ -119,7 +119,15 @@
 // const formatNum = typeof num === 'number' ? num.toLocaleString() : '数値を入力してください';
 // console.log(formatNum); // 数値が数字かどうかを確かめている
 
-const checkSum = (num1, num2) => {
-  return num1 + num2 > 100 ? '100を超えています' : '許容範囲です';
-};
-console.log(checkSum(40, 60)); // 100を超えています
+// const checkSum = (num1, num2) => {
+//   return num1 + num2 > 100 ? '100を超えています' : '許容範囲です';
+// };
+// console.log(checkSum(40, 60)); // 100を超えています
+
+const val = [];
+
+if (val) {
+  console.log('trueです');
+} else {
+  console.log('falseです');
+} // falseです
