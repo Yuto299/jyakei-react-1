@@ -100,12 +100,26 @@
 // });
 // console.log(newNumArry); // [1, 3, 5]
 
-const nameArray = ['田中', '山田', '佐藤'];
-const newNameArray = nameArray.map((name) => {
-  if (name !== '佐藤') {
-    return `${name}さん、こんにちは！`;
-  } else {
-    return `${name}、こんにちは！`;
-  }
-});
-console.log(newNameArray); //配列じゃないとmapは使用できない
+// const nameArray = ['田中', '山田', '佐藤'];
+// const newNameArray = nameArray.map((name) => {
+//   if (name !== '佐藤') {
+//     return `${name}さん、こんにちは！`;
+//   } else {
+//     return `${name}、こんにちは！`;
+//   }
+// });
+// console.log(newNameArray); //配列じゃないとmapは使用できない
+
+// const val = 1 > 0 ? 'true' : 'false'; //三項演算子
+// console.log(val); // true
+
+// const num = '1300';
+// console.log(num.toLocaleString()); // 文字列の時は使用できない
+
+// const formatNum = typeof num === 'number' ? num.toLocaleString() : '数値を入力してください';
+// console.log(formatNum); // 数値が数字かどうかを確かめている
+
+const checkSum = (num1, num2) => {
+  return num1 + num2 > 100 ? '100を超えています' : '許容範囲です';
+};
+console.log(checkSum(40, 60)); // 100を超えています
