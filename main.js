@@ -42,9 +42,18 @@
 // const sayHello = (name = 'ゲスト') => console.log(`こんにちは！${name}さん!`);
 // sayHello('ゆと');
 
+// const myProfile = {
+//   age: 31,
+// };
+// const { age, name = 'ゲスト' } = myProfile;
+// console.log(age); // 31
+// console.log(name); // undefined
+
+const name = 'ゆと';
+const age = 21;
+
 const myProfile = {
-  age: 31,
+  name,
+  age,
 };
-const { age, name = 'ゲスト' } = myProfile;
-console.log(age); // 31
-console.log(name); // undefined
+console.log(myProfile); // { name: 'ゆと', age: 21 }
